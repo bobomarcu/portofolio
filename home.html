@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan Marcu Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="welcome" style="display: none;">
+        <h1>Hello there!</h1>
+    </div>
+    <div class="top">
+        <div class="intro"  id="intr" style="display: none;">
+        <h1> I am Bogdan Marcu</h1>
+        <h3>This is my Portofolio</h3>
+        </div>
+    </div>
+    <script>
+        $(window).scroll(function(){
+        $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
+    </script>
+    <script>
+        $(".welcome").fadeIn(2000);
+        $(".welcome").fadeOut(1000);
+        setTimeout(function(){
+            $(".intro").fadeIn(2000);
+            $(".welcome").fadeOut(1000);
+            
+        }, 3000);
+        
+    </script>
+    <div style="opacity: 0;height: 100px;">
+        <p>aaaaaa</p>
+    </div>
+    <div class="info" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="2000">
+            <h3>About me...</h3>
+            <ul>
+                <li>I'm a begginer <b>Web Devloper</b></li>
+                <li><b>Known programming languages:</b> HTML, CSS, jQuery, JavaScript, PHP, C#, C++, C and Python</li>
+                <li> <b>From:</b> Sibiu, Romania</li>
+                <li><b>Known languages:</b>English(B2), Deutsch(B2), Romanian</li>
+                <li><b>Where I live now:</b> Cluj-Napoca, Romania</li>
+                <li><b>Age: </b>19</li>
+                <li><b>Education:</b>
+                <ul>
+                    <li>Octavian Goga National College Sibiu</li>
+                    <li>Babes Bolyai Univeristy Cluj-Napoca, Business Informatics</li>
+                </ul>
+                </li>
+            </ul>
+            <a id="insta" href="https://www.instagram.com/bobomarcu/"><button><img src="instaw.png" height="20px"></button></a>
+            <a id="github" href="https://github.com/bobomarcu"><button><img src="githubw.png" height="20px"></button></a>
+    </div>
+    <div class="content" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="4000">
+        <h3>Web Projects</h3>
+        <p>
+            Here are a few web project of mine.<br>
+            They are created with HTML CSS JavaScript and jQuery.<br>
+            In near future i plan to add a database for an advanced user experience.
+            
+        </p>
+    </div>
+   
+   
+    <div class="content" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="1500">
+        <h3>Gas Calculator</h3>
+        <p>
+           It's calculator for how much gasoline you need in order to drive a distance.
+           
+        </p>
+           <a href="https://bobomarcu.github.io/gas/home.html"><button>Check Web Page</button></a>
+    </div>
+    <div class="content" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="1500">
+        <h3>Binary Convertor</h3>
+        <p>
+            You have to enter a 128 bit binary number and the website will convert it to ASCII code. 
+            
+        </p>
+        <a href="https://bobomarcu.github.io/binary/home.html"><button>Check Web Page</button></a>
+    </div>
+    <div class="content" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="1500">
+        <h3>Stock predicion</h3>
+        <p>
+           You have to enter certain datas about a stock and the website will predict tomorrow stocks paremeters.
+           
+        </p>
+        <a href="https://bobomarcu.github.io/stocks/home.html"><button>Check Web Page</button></a>
+    </div>
+    <div class="content" data-aos="fade-in" data-aos-delay="390"  data-aos-duration="1500">
+        <h3>Tinder pick-up line</h3>
+        <p>
+           25+ pick up lines ready to help you pick up a person from Tinder.
+           
+        </p>
+        <a href="https://bobomarcu.github.io/random/home.html"><button>Check Web Page</button></a>
+    </div>
+    <div style="opacity: 0;height: 350px;">
+        <p>aaaaaa</p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>
